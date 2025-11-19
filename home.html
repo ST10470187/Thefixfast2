@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixFast crew </title>
+    <link rel="style" href="style.css">
+
+</head>
+<style>
+    body{
+    color: #ffa500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: auto;
+    background-color: #1e90ff;
+    margin: 0%;
+}
+
+header{
+    background-color: #ffa500;
+    color: #1e90ff;
+    padding: 20px;
+    font-size: 2em;
+}
+
+nav ul li{
+    display: inline;
+}
+</style>
+<body>
+    <div style="background-color: aqua; align-self: center;" >
+        <header>FIX FAST CREW</header>
+
+        <nav >
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="contact us.html">CONTACT US</a></li>
+        <li><a href="qoutes.html">QOUTES</a></li>
+    </ul>
+   </nav>
+    </div>
+   <div>
+    <h1>What we offer</h1>
+     <p>Plumbing</p> 
+     <p>Carpentry</p>
+     <p>Electrical</p>
+     <p>Structural</p>
+     <p>Roof</p>
+
+    
+   </div>
+   <img src="logo.jpg" alt="logo" style="width: 300px;height: 300px;border-radius: 10px;box-shadow: 15px;" >
+
+   <footer style="bottom: 5px;">EST 2018 PTY LTD, Johannesburg, South Africa, 123 Valentine Street </footer>
+
+   <script>
+    document.querySelectorAll('.service, a, button').forEach(el =>{
+        el.style.transition = 'all 0.3s';
+        el.addEventListener('mouseenter', () => el.style.transform = 'translateY(-5px)');
+        el,addEventListener('mouseleave', () => el.style.transform = 'translateY(0)')
+    })
+   </script>
+   
+</body>
+</html>

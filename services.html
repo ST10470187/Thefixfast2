@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="style" href="style.css">
+</head>
+<style>
+    body{
+    color: #ffa500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: auto;
+    background-color: #1e90ff;
+    margin: 0%;
+}
+header{
+    background-color: #ffa500;
+    color: #1e90ff;
+    padding: 20px;
+    font-size: 2em;
+}
+nav ul li{
+    display: inline;
+}
+
+
+</style>
+<body>
+ 
+<div style="background-color: aqua; align-self: center;" >
+    <header>SERVICES</header> </div>
+
+    <div class="container-fluid">
+
+        <div class="container">
+
+            <div class="search" style="text-align: center;margin: 30px 0;" >
+
+                <h1>Our Services</h1>
+                <input type="text" id="find" placeholder="search here" onkeyup="search()" style="width: 80%;max-width: 600px; padding: 15px 20px;font-size: 18px;border: 3px solid #007bff; border-radius: 50px;
+                outline: none;box-shadow: 0 5px 15px rgba(0, 123,255, 0.3);">
+
+            </div>
+           <div class="service-list" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div class="service">
+                <img src="plumber.jpg" style="width: 200px;height: 200px;border-radius: 10px;box-shadow: 10px;">
+                <h3>PLUMBING</h3>
+                <h4>R200/hr</h4>
+                <h5>We fix leaks, install new fittings, emergency repairs 24/7</h5>
+            </div>
+
+            <div class="service">
+                <img src="carpentry.jpg" style="width: 200px;height: 200px;border-radius: 10px;box-shadow: 10px;">
+                <h3>CARPENTRY</h3>
+                <h4>R400/hr</h4>
+                <h5>We fit in new doors, fix cracked wood, install new fittings</h5>
+            </div>
+            <div class="service">
+                <img src="electrical.jpg" style="width: 200px;height: 200px;border-radius: 10px;box-shadow: 10px;">
+                <h3>Electrical</h3>
+                <h4>R300/hr</h4>
+                <h5>Safe & secure installations, Maintain all wiring, emergency repairs 24/7</h5>
+            </div>
+            <div class="service">
+                <img src="roof.jpg" style="width: 200px;height: 200px;border-radius: 10px;box-shadow: 10px;">
+                <h3>ROOF</h3>
+                <h4>R600/hr</h4>
+                <h5>We patch Roof leaks, full roof installations, 24/7 emergency repairs</h5>
+            </div>
+             <div class="service">
+                <img src="structural.jpg" style="width: 200px;height: 200px;border-radius: 10px;box-shadow: 10px;">
+                <h3>Structural</h3>
+                <h4>R300/hr</h4>
+                <h5>Repair cracked walls , Renforcement of load bearing walls, etc..</h5>
+            </div>
+            <div class="service">
+                <img src="tiles.jpg" style="width: 200px;height: 200px;border-radius: 10px;box-shadow: 10px;">
+                <h3>Tiling</h3>
+                <h4>R500/hr</h4>
+                <h5>Tile repairs and re-grouting, bathroon, kitchen, etc...</h5>
+            </div>
+
+
+           </div>
+        
+
+        </div>
+
+    </div>
+
+    <script>
+        function search() {
+            let filter = document.getElementById('find').nodeValue.toUpperCase();
+            let items = document.querySelectorAll('.service');
+
+            items.forEach(function(item) {
+                let text = item.textContent || item.innerText;
+                if (text.toUpperCase().indexOF(filter) > -1) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none"
+                }
+            })
+        }
+    </script>
+
+            
+
+
+
+            
+        
+
+    </script>
+
+   <nav>
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="contact us.html">CONTACT US</a></li>
+        <li><a href="qoutes.html">QOUTES</a></li> 
+    </ul>
+   </nav>
+</div>
+
+
+
+<img src="logo.jpg" alt="logo" style="position: absolute;top: 10px;left: 10px;width: 80px;height: 80px;border-radius: 10px;box-shadow: 15px;">
+    
+<footer style="bottom: 5px;">EST 2018 PTY LTD, Johannesburg, South Africa, 123 Valentine Street </footer>
+
+<script>
+    document.querySelectorAll('.service, a, button').forEach(el =>{
+        el.style.transition = 'all 0.3s';
+        el.addEventListener('mouseenter', () => el.style.transform = 'translateY(-5px)');
+        el,addEventListener('mouseleave', () => el.style.transform = 'translateY(0)')
+    })
+   </script>
+   
+</body>
+</html>

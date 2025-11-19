@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="style" href="style.css">
+</head>
+<style>
+    body{
+    color: #ffa500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: auto;
+    background-color: #1e90ff;
+    margin: 0%;
+}
+
+header{
+    background-color: #ffa500;
+    color: #1e90ff;
+    padding: 20px;
+    font-size: 2em;
+}
+nav ul li{
+    display: inline;
+}
+</style>
+<body>
+
+    <div style="background-color: aqua; align-self: center;" >
+    <header>CONTACT US</header>
+
+    <nav>
+<ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="contact us.html">CONTACT US</a></li>
+        <li><a href="qoutes.html">QOUTES</a></li>
+    </ul>
+
+    </nav>
+    </div>
+
+    <div>
+        <p>Email:fixfast@gmail.com</p>
+        <p>Phone: +27 65 909 2016/+27 64 833 4512</p>
+        <p>Address: 123 Valentine Street , Johannesburg, South Africa</p>
+        
+        <form>
+            <label for="Email">Enter your email to contact us</label>
+            <input type="email" id="Email" name="Email" placeholder="example@gmail.com">
+            <button type="submit">CONTACT US</button>
+        </form>
+    </div>
+    
+    <img src="logo.jpg" alt="logo" style="position: absolute;top: 10px;left: 10px;width: 80px;height: 80px;border-radius: 10px;box-shadow: 15px;">
+    
+   <script>
+    document.querySelectorAll('.service, a, button').forEach(el =>{
+        el.style.transition = 'all 0.3s';
+        el.addEventListener('mouseenter', () => el.style.transform = 'translateY(-5px)');
+        el,addEventListener('mouseleave', () => el.style.transform = 'translateY(0)')
+    })
+   </script>
+</body>
+</html>
